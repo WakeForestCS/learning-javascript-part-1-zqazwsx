@@ -1,0 +1,60 @@
+<html>
+
+	<head>
+		<title>Lucky Number</title>
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+
+
+		<style>
+			body {
+				padding-top: 70px;
+			}
+		</style>
+
+	</head> <!-- END header -->
+
+	<body><!-- BEGIN body -->
+
+		<div class="container">
+
+			<div class="starter-template">
+
+		<h1>Lucky Number</h1>
+
+		<p>Come and guess my lucky Number!</p>
+
+		<button type="button" onClick="incorrect()">1</button>
+		<button type="button" onClick="incorrect()">2</button>
+		<button type="button" onClick="incorrect()">3</button>
+		<button type="button" onClick="incorrect()">4</button>
+		<button type="button" onClick="incorrect()">5</button>
+		<button type="button" onClick="incorrect()">6</button>
+		<button type="button" onClick="incorrect()">7</button>
+		<button type="button" onClick="incorrect()">8</button>
+		<button type="button" onClick="correct()">9</button>
+
+		<div id="alertBox"></div>
+
+		<script>
+
+		var times = 1;
+
+
+			function incorrect() {
+				var box = document.getElementById("alertBox");
+				box.innerHTML = "Not correct, try again!";
+				times++;
+			}
+
+			function correct() {
+				var box = document.getElementById("alertBox");
+				box.innerHTML = "Correct! "+times+" times to get it correct.";
+			}
+
+
+		</script>
+
+	</body> <!-- END body -->
+
+</html>
