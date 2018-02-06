@@ -1,0 +1,26 @@
+<html>
+  <script>
+function add(first,second,callback) {
+  console.log(first+second);
+  if(callback) {
+    callback();
+  }
+}
+
+add(2,9, function(){
+  console.log('test');
+});
+
+
+// function lucky(){
+//   console.log('Lucky Number Detected!');
+// }
+
+// add(2,3,lucky);
+// add(1,3,lucky);
+// add(3,4,lucky);
+// add(4,5,lucky);
+// add(2,8,lucky);
+
+  </script>
+</html>
